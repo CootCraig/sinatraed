@@ -1,0 +1,12 @@
+%h1 Login
+%form{:action => '/login', :id => 'login', :method => 'POST'}
+  %fieldset
+    %label{:for => 'username'} username
+    %input{:id => 'username', :name => 'username', :type => 'text'}
+
+  %fieldset
+    %label{:for => 'password'} password
+    %input{:id => 'password', :name => 'password', :type => 'password'}
+
+  %fieldset
+    %input{:type => 'submit', :value => 'Login!'}
